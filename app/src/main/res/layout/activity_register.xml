@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.userAuthentication.Register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/gallery_profile_pic_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"
+            android:maxWidth="150dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/giftbees"
+            android:elevation="3dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mochiy"
+            android:padding="5dp"
+            android:gravity="start"
+            android:text="Profile Picture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:fontFamily="@font/mochiy"
+            android:layout_marginTop="50dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/atTheRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/atTheRate"
+                android:hint="Name"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/atTheRate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/username_detals_src" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/atTheRate2"
+                android:hint="Username"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/rate2"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/atrate"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/rate2"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>-->
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/rate3"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/rate3"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/rate4"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/rate4"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>-->
+        <!--<androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#0694D6"
+            android:textSize="16dp"
+            android:text="Forgot Password?"
+            />-->
+        <ProgressBar
+            android:id="@+id/register_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:layout_marginTop="50dp"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/bee_yellow"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:text="Continue"
+            android:visibility="visible"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

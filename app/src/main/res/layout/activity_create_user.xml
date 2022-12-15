@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6FED156"
+    tools:context=".presentation.userAuthentication.CreateUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create User"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:fontFamily="@font/mochiy"
+            android:layout_marginTop="50dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/atTheRate"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/atrate"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/atTheRate"
+                android:hint="Email Address"
+                android:textColorHint="#A09898" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/atTheRat"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/atTheRat"
+                android:textColorHint="#A09898"
+                android:hint="Password"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/email_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_baseline_alternate_email_24" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/email_logo"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="@font/mochiy"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:text="+91"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:textColor="@color/bee_yellow" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_id_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/email_logo"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/password_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/password_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:src="@drawable/ic_baseline_password_24" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/email_logo"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="@font/mochiy"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:text="+91"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:textColor="@color/bee_yellow" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/password_logo"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/confirm_password_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/confirm_password_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:src="@drawable/ic_baseline_password_24" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/email_logo"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="@font/mochiy"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:text="+91"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:textColor="@color/bee_yellow" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/confirm_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/confirm_password_logo"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_user_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
+            android:elevation="35dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Register"
+            android:visibility="visible"
+            />
+
+        <ProgressBar
+            android:id="@+id/register_user_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/bee_yellow"
+            android:visibility="gone"/>
+
+
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/otp_container"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:visibility="gone"-->
+        <!--            >-->
+
+        <!--            <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                android:id="@+id/edit"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="12dp"-->
+        <!--                android:src="@drawable/ic_baseline_password_24" />-->
+
+        <!--            <androidx.appcompat.widget.AppCompatEditText-->
+        <!--                android:id="@+id/otp_login"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_toEndOf="@id/edit"-->
+        <!--                android:hint="OTP"-->
+        <!--                android:inputType="textPassword"-->
+        <!--                android:textColorHint="#A09898" />-->
+
+        <!--        </RelativeLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/otp_container_box"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:visibility="gone">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/otp_1"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:background="@drawable/otp_background"-->
+        <!--                android:fontFamily="@font/lato_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:maxLength="1"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:inputType="number"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/otp_2"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:background="@drawable/otp_background"-->
+        <!--                android:fontFamily="@font/lato_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:maxLength="1"-->
+
+        <!--                android:textColor="@color/black"-->
+        <!--                android:inputType="number"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/otp_3"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:background="@drawable/otp_background"-->
+        <!--                android:fontFamily="@font/lato_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:maxLength="1"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:inputType="number"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/otp_4"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:background="@drawable/otp_background"-->
+        <!--                android:fontFamily="@font/lato_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:maxLength="1"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:inputType="number"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/otp_5"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:background="@drawable/otp_background"-->
+        <!--                android:fontFamily="@font/lato_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:maxLength="1"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:inputType="number"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/otp_6"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:background="@drawable/otp_background"-->
+        <!--                android:fontFamily="@font/lato_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:maxLength="1"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:inputType="number"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--        </LinearLayout>-->
+
+
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/logInWithOtpBtn"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/roundcorner"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:textSize="16dp"-->
+        <!--            android:elevation="35dp"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Login With OTP"-->
+        <!--            android:visibility="gone"-->
+        <!--            />-->
+
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/login_with_otp_progress_bar"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:indeterminate="true"-->
+        <!--            android:indeterminateTintMode="src_atop"-->
+        <!--            android:indeterminateTint="@color/bee_yellow"-->
+        <!--            android:visibility="gone"/>-->
+
+        <!--<androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mochiy"
+            android:textColor="@color/bee_yellow"
+            android:text="OR"
+            android:textSize="18sp"
+            android:layout_margin="20dp" />-->
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/edit2"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/name"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password_login_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/edit2"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textColorHint="#A09898" />
+
+        </RelativeLayout>-->
+
+        <!--<androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_user_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:textSize="16dp"
+            android:elevation="35dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Register"
+            />-->
+
+        <!--android:layout_marginStart="220dp"
+            android:layout_marginTop="20dp"-->
+        <!--<androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
+            android:elevation="35dp"
+            android:textAllCaps="false"
+            android:text="Sign In"
+            />-->
+        <!--<com.google.android.gms.common.SignInButton
+            android:id="@+id/google_sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:elevation="35dp" />-->
+        <!--<androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="#0694D6"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:text="Forgot Password?"
+            />-->
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/line_left"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="OR"
+                android:layout_toRightOf="@id/line_left"
+                />
+            <View
+                android:id="@+id/line_lef"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+
+                android:layout_toRightOf="@+id/or"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>-->
+
+        <!--<androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundcorner"
+            android:elevation="35dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp">
+
+        </androidx.appcompat.widget.AppCompatButton>-->
+
+        <TextView
+            android:id="@+id/terms_and_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mochiy"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tnc"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/secondary2"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

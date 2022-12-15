@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bees</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="firebase_web_client_id">133654872829-1u3ieicgdt9mukgpgbg6937a4bdise2m.apps.googleusercontent.com</string>
+    <string name="firebase_web_client_id2">418330718695-bi6ba1qh46mub70gu0ij3g8krven32iu.apps.googleusercontent.com</string>
+    <string name="tnc">By Signing In you agree to our <u>Terms &amp; Conditions</u>.</string>
+</resources>

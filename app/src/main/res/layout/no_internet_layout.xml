@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--Toolbaar-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="64dp"
+    tools:context=".presentation.homeFeed.HomeActivity"
+
+    >
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/no_interner_page" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_bold"
+        android:text="Could not connect to network please check your internet state."
+        android:textColor="#A0A0A0"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_tryagain"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_bold"
+        android:padding="12dp"
+        android:text="Try again"
+        android:textColor="#990000"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
+
+
